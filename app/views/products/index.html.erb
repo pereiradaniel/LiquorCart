@@ -1,5 +1,9 @@
 <h1>Products#index</h1>
 
+<div class="cart">
+	<%= render "carts/cart_text" %>
+</div>
+
 <% @products.each do |product| %>
 	<ul>
 		<li>Name <%= product.name %></li>

@@ -5,10 +5,10 @@ class ApplicationController < ActionController::Base
   helper_method :current_cart
 
   def current_cart
-  	if !session[:cart_id].nil?
-  		Cart.find(session[:cart_id])
-  	else
-  		Cart.new
+  	if !session[:cart_id].nil? 
+      Cart.find(session[:cart_id])
+    else
+      Cart.new
   	end
   end
 
