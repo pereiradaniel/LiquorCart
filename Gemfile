@@ -37,6 +37,7 @@ gem 'mini_magick'
 gem 'bourbon'
 gem 'neat'
 gem 'refills'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
