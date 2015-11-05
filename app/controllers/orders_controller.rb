@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
 		@order = @cart.orders.new(order_params)
 		@cart.save
 		session[:cart_id] = @cart.id
+		@orders = @cart.orders
 	end
 
 	def update

@@ -1,7 +1,11 @@
 <h1>Products#index</h1>
 
-<div class="cart">
+<div class="cart-text">
 	<%= render "carts/cart_text" %>
+</div>
+
+<div class="cart-list">
+	<%= render "carts/cart" %>
 </div>
 
 <% @products.each do |product| %>

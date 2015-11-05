@@ -4,6 +4,9 @@
 	<ul>
 		<% @orders.each do |order| %>
 			<li><%= order.product.name %></li>
+			<li>
+			<%= link_to "Remove", order, { data: { confirm: "Are you sure you want to remove the item?"}, method: :delete, remote: true, class: "btn btn-danger"} %>
+			</li>
 		<% end %>
 	</ul>
 <% end %>
