@@ -1,0 +1,9 @@
+<h1>Products#index</h1>
+
+<% @products.each do |product| %>
+	<ul>
+		<li>Name <%= product.name %></li>
+		<li>Description <%= product.description %></li>
+		<li>Price $<%= product.price %></li>
+	</ul>
+<% end %>
