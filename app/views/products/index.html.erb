@@ -8,16 +8,8 @@
 	<%= render "carts/cart" %>
 </div>
 
-<% @products.each do |product| %>
-	<ul>
-		<li>Name <%= product.name %></li>
-		<li>Description <%= product.description %></li>
-		<li>Price $<%= product.price %></li>
-		<li><%= image_tag(product.image_url.to_s) %></li>
-	</ul>
-
-	<%= form_for @order, remote: true do |f| %>
-		<%= f.hidden_field :product_id, value: product.id %>
-		<%= f.submit "Add to cart", class: "btn btn-primary" %>
-	<% end %>
-<% end %>
+<div class="cards">
+	<div class="products-list">
+		<%= render @products %>
+	</div>
+</div>

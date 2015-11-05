@@ -1,0 +1,25 @@
+<% @products.each do |product| %>
+  <div class="card">
+    
+    <div class="card-header">
+			<h2>Name <%= product.name %></h2>
+    </div>
+    
+    <div class="card-image">
+      <%= image_tag product.image_url %>
+    </div>
+    
+    <div class="card-copy">
+			<ul>
+				<li>Description <%= product.description %></li>
+				<li>Price $<%= product.price %></li>
+			</ul>
+    </div>
+
+			<%= form_for @order, remote: true do |f| %>
+				<%= f.hidden_field :product_id, value: product.id %>
+				<%= f.submit "Add to cart", class: "btn btn-primary" %>
+			<% end %>
+
+	</div>
+<% end %>
