@@ -5,6 +5,6 @@
 		<li>Name <%= product.name %></li>
 		<li>Description <%= product.description %></li>
 		<li>Price $<%= product.price %></li>
-		<li><%= image_tag(product.image.to_s) %></li>
+		<li><%= image_tag(product.image_url.to_s) %></li>
 	</ul>
 <% end %>

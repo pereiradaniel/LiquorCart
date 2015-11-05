@@ -5,7 +5,7 @@
 		name: "Product#{i}",
 		description: "Description#{i}",
 		price: i,
-		image: open("#{Rails.root}/app/assets/images/whiskey.jpeg")
+		image: open("#{Rails.root}/app/assets/images/whiskey.jpg")
 		})
 
 end
