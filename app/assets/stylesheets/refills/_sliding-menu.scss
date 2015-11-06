@@ -26,20 +26,24 @@
   $sliding-menu-background-focus: lighten($sliding-menu-background, 5%);
 
   @include position(fixed, 0px auto 0px 0px);
-  @include size(220px 100%);
-  @include transform(translateX(-220px));
+  @include size(250px 100%);
+  @include transform(translateX(-250px));
   @include transition(all 0.25s linear);
   background: $sliding-menu-background;
   z-index: 999999;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
+  .order-name {
+    color: $light-gray;
+  }
+
   li a {
     border-bottom: $sliding-menu-border;
     color: $sliding-menu-color;
     display: block;
     font-weight: bold;
-    padding: 1em;
+    padding: 0.25em;
 
     &:focus {
       background-color: $sliding-menu-background-focus;

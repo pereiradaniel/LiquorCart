@@ -7,12 +7,12 @@
 <nav class="js-menu sliding-menu-content">
 	<% if @orders.size == 0 %>
 		<ul>
-			<li>There are no items in your shopping cart.</li>
+			<li class="order-name">There are no items in your shopping cart.</li>
 		</ul>
 	<% else %>
 		<ul>
 			<% @orders.each do |order| %>
-				<li><%= order.product.name %></li>
+				<li class="order-name"><%= order.product.name %></li>
 				<li>
 				<%= link_to "Remove", order, { data: { confirm: "Are you sure you want to remove the item?"}, method: :delete, remote: true, class: "btn btn-danger"} %>
 				</li>
