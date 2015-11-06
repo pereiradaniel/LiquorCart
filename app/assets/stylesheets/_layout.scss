@@ -1,5 +1,9 @@
 main {
-	// @include clearfix;
-	// @include outer-container;
-	// background-color: $light-gray;
+	max-width: 320px;
+	margin: auto;
+}
+
+.container {
+	width: 640px;
+	background-color: $light-gray;
 }

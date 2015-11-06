@@ -2,6 +2,12 @@
   @include display(flex);
   @include flex-wrap(wrap);
   @include justify-content(space-between);
+  margin: auto;
+}
+
+.products-list {
+  max-width: 320px;
+  margin: auto;
 }
 
 .card {
@@ -28,15 +34,17 @@
   @include flex-basis(15em);
   @include flex-grow(1);
   @include transition (all 0.2s ease-in-out);
+  // display: inline;
   background-color: $card-background;
   border-radius: $base-border-radius;
   border: $card-border;
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
-  margin: 0 $card-margin $base-spacing $card-margin;
+  margin: auto;
+  // margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
-  float: left;
-  // width: 75px;
+  // float: left;
+  width: 100%;
 
   .card-image {
     overflow: hidden;
