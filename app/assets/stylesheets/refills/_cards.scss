@@ -3,14 +3,43 @@
   @include flex-wrap(wrap);
   @include justify-content(space-between);
   margin: auto;
+  width: 100%;
 }
 
 .products-list {
-  max-width: 320px;
   margin: auto;
+  width: 100%;
 }
 
 .card {
+  @include outer-container();
+    @include media($small-screen-only) {
+      @include span-columns(1);
+      width: 100%;
+    }
+
+    @include media($small-medium-screen-only) {
+      @include span-columns(1);
+      width: 50%;
+    }
+
+    @include media($medium-screen-only) {
+      @include span-columns(1);
+      width: 33.3%
+    }
+
+    @include media($large-screen-only) {
+      @include span-columns(1);
+      width: 25%;
+    }
+
+    @include media($xlarge-screen-up) {
+      @include span-columns(1);
+    }
+}
+
+.card {
+
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
@@ -34,7 +63,6 @@
   @include flex-basis(15em);
   @include flex-grow(1);
   @include transition (all 0.2s ease-in-out);
-  // display: inline;
   background-color: $card-background;
   border-radius: $base-border-radius;
   border: $card-border;
@@ -44,7 +72,8 @@
   // margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   // float: left;
-  width: 100%;
+  display: inline-block;
+  // max-width: 200px;
 
   .card-image {
     overflow: hidden;

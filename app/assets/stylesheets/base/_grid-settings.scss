@@ -3,16 +3,30 @@
 // $visual-grid-color: lighten(red, 10%);
 
 // Neat Overrides
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 12;
+// $column: 10em;
+$gutter: 0.25em;
+$grid-columns: 2;
 // $max-width: 1200px;
 
 // Neat Breakpoints
-// $small-screen: 300px;
-// $medium-screen: 600px;
-// $large-screen: 900px;
+$small-screen: 300px;
+$small-medium-screen: 550px;
+$medium-screen: 640px;
+$large-screen: 960px;
+$xlarge-screen: 1280px;
+$xxlarge-screen: 1600px;
 
-// $small-screen-up: new-breakpoint(min-width $small-screen 2);
-// $medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-// $large-screen-up: new-breakpoint(min-width $large-screen 8);
+$small-screen-up: new-breakpoint(min-width em($small-screen) 1);
+$small-screen-only: new-breakpoint(min-width em($small-screen) max-width em($medium-screen - 1px) 1);
+
+$small-medium-screen-up: new-breakpoint(min-width em($small-medium-screen) 2);
+$small-medium-screen-only: new-breakpoint(min-width em($small-medium-screen) max-width em($medium-screen - 1px) 2);
+
+$medium-screen-up: new-breakpoint(min-width em($medium-screen) 3);
+$medium-screen-only: new-breakpoint(min-width em($medium-screen) max-width em($large-screen - 1px) 3);
+
+$large-screen-up: new-breakpoint(min-width em($large-screen) 4);
+$large-screen-only: new-breakpoint(min-width em($large-screen) max-width em($xlarge-screen - 1px) 4);
+
+$xlarge-screen-up: new-breakpoint(min-width em($xlarge-screen) 5);
+$xxlarge-screen-up: new-breakpoint(min-width em($xxlarge-screen) 5);
