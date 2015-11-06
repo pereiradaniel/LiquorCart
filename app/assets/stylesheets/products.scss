@@ -1,3 +1,27 @@
-// Place all the styles related to the Products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Modal settings
+
+.package {
+	// border: $base-border;
+	border-radius: $base-border-radius;
+	margin-bottom: 2em;
+	ul {
+		li {
+			padding-left: 1em;
+		}
+
+		// li:last {
+		// 	margin-bottom: 0.25em;
+		// }
+		
+		.package-header {
+			padding-left: none;
+			text-align: center;
+			color: white;
+			background-color: lighten($light-blue, 10%);
+		}
+	}
+}
+
+.modal-trigger {
+	width: 100%;
+}

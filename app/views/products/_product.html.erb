@@ -26,10 +26,10 @@
 			      <p class="modal-content">
 				      <% product.packages.each do |package| %>
 								<div class ="package">
-									<p>Price <%= package.price %></p>
-									<p>Volume <%= package.volume_in_ml %></p>
-									<p>Continer type <%= package.container_type %></p>
-									<p>Quantity <%= package.quantity %></p>
+									<ul>
+										<li class="package-header"><%= package.volume_in_ml %> ml <%= package.container_type %></li>
+										<li>Quantity <%= package.quantity %> / $<%= package.price %></li>
+									</ul>
 									<%= form_for @order, remote: true do |f| %>
 										<%= f.hidden_field :package_id, value: package.id %>
 										<%= f.hidden_field :product_id, value: product.id %>
