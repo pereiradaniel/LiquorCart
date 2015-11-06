@@ -1,8 +1,15 @@
-<h1>Products#index</h1>
 
-<div class="cart-text">
-	<%= render "carts/cart_text" %>
+<div class="cart-info-bar">
+	<button type="button" class="js-menu-trigger sliding-menu-button">
+		<div class="icon">
+			<i class="fa fa-shopping-cart"></i>
+		</div>
+	</button>
+	<div class="cart-text">
+		<%= render "carts/cart_text" %>
+	</div>
 </div>
+
 
 <div class="cart-list">
 	<%= render "carts/cart" %>

@@ -6,11 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+	<main class="container">
+		<header>
+			<h1>Thirsty</h1>
+		</header>
+		<body>
 
-<main class="container">
-	<%= yield %>
-</main>
+			<%= yield %>
 
-</body>
+		</body>
+	</main>
 </html>

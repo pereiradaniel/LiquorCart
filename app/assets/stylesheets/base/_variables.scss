@@ -19,6 +19,7 @@ $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$light-blue: #477DCA;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -39,3 +40,6 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Box shadows
+$base-box-shadow: 0 2px 3px rgba(#000, 0.06);
