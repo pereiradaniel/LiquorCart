@@ -23,10 +23,20 @@
 			      <label class="modal-close" for="modal-1"></label>
 			      <h1>Product name</h1>
 			      <p class="modal-intro">Please make a selection to add to your cart:</p>
-			      <p class="modal-content">	      	
-						<%= form_for @order, remote: true do |f| %>
-							<%= f.hidden_field :product_id, value: product.id %>
-							<%= f.submit "Add to cart", class: "btn btn-primary" %>
+			      <p class="modal-content">
+				      <% product.packages.each do |package| %>
+								<div class ="package">
+									<p>Price <%= package.price %></p>
+									<p>Volume <%= package.volume_in_ml %></p>
+									<p>Continer type <%= package.container_type %></p>
+									<p>Quantity <%= package.quantity %></p>
+									<%= form_for @order, remote: true do |f| %>
+										<%= f.hidden_field :package_id, value: package.id %>
+										<%= f.hidden_field :product_id, value: product.id %>
+										<%= f.hidden_field :cart_id, value: current_cart.id %>
+										<%= f.submit "Add to cart", class: "btn btn-primary" %>
+				      		<% end %>
+								</div>
 						<% end %>
 			      </p>
 			    </div>

@@ -27,6 +27,21 @@
 		display: inline;
 		width: 4em;
 	}
+}
 
-
+.cart-item-listing {
+	.order-name {
+    color: $light-blue;
+    padding-left: 1em;
+  }
+  
+ 	li {
+		color: $light-gray;
+		font-size: 0.75em;
+		padding-left: 2em;
+	}
+	
+	border-bottom: 1px solid $dark-gray;
+	margin-bottom: 1em;
+	padding: 0.25em;
 }
