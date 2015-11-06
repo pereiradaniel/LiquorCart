@@ -14,14 +14,14 @@
 		
 		<div class="add-to-cart-btn">
 			<div class="modal">
-			  <label for="modal-1">
+			  <label for="modal-<%= product.id %>">
 			    <div class="modal-trigger">Add to cart</div>
 			  </label>
-			  <input class="modal-state" id="modal-1" type="checkbox" />
+			  <input class="modal-state" id="modal-<%= product.id %>" type="checkbox" />
 			  <div class="modal-window">
 			    <div class="modal-inner">
-			      <label class="modal-close" for="modal-1"></label>
-			      <h1>Product name</h1>
+			      <label class="modal-close" for="modal-<%= product.id %>"></label>
+			      <h1><%= product.name %></h1>
 			      <p class="modal-intro">Please make a selection to add to your cart:</p>
 			      <p class="modal-content">
 				      <% product.packages.each do |package| %>
