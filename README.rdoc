@@ -3,4 +3,4 @@ Just a simple, mobile ready, single page Rails app for a job interview test.  Id
 I noticed there are a few issues with the way it's displayed, due to mixin deprecations.  Bummer.
 
 Try it on Heroku:
-https://stark-eyrie-4311.herokuapp.com/
+https://stark-eyrie-4311.herokuapp.com
