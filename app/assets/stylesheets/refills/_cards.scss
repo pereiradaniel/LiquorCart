@@ -58,12 +58,12 @@
   $card-background: lighten($card-border-color, 10%);
   $card-header-background: $card-background;
   $card-hover-background: lighten($card-background, 5%);
-  $card-image-background: #DBD199;
+  $card-image-background: white;
   $card-image-hover-background: lighten($card-image-background, 5%);
   $card-margin: 1em;
 
-  @include flex-basis(15em);
-  @include flex-grow(1);
+  // @include flex-basis(15em);
+  // @include flex-grow(1);
   @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
   border-radius: $base-border-radius;
@@ -84,9 +84,10 @@
     
     img {
       @include transition (all 0.2s ease-in-out);
-      background: $card-image-background;
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
+      height: 150px;
+      padding-bottom: 2em;
       // width: 100%;
     }
   }
