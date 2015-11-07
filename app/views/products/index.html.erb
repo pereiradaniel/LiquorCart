@@ -1,3 +1,19 @@
+<form class="search-bar" role="search">
+  <input id="search" type="search" placeholder="Enter Search" />
+  <button id="search-btn" type="submit">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+  </button>
+</form>
+
+<div class="cart-list">
+	<%= render "carts/cart" %>
+</div>
+
+<div class="cards">
+	<div class="products-list">
+		<%= render @products %>
+	</div>
+</div>
 
 <div class="cart-info-bar">
 	<button type="button" class="js-menu-trigger sliding-menu-button">
@@ -7,16 +23,5 @@
 	</button>
 	<div class="cart-text">
 		<%= render "carts/cart_text" %>
-	</div>
-</div>
-
-
-<div class="cart-list">
-	<%= render "carts/cart" %>
-</div>
-
-<div class="cards">
-	<div class="products-list">
-		<%= render @products %>
 	</div>
 </div>

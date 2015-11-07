@@ -4,6 +4,7 @@ class OrdersController < ApplicationController
 		@cart = current_cart
 		@order = @cart.orders.new(order_params)
 		@cart.save
+		@cart.subtotal = calculate_cart_price(@cart)
 		session[:cart_id] = @cart.id
 		@orders = @cart.orders
 	end
@@ -21,6 +22,15 @@ class OrdersController < ApplicationController
 		@order.destroy
 		@orders = @cart.orders
 	end
+
+	def calculate_cart_price(cart)
+		subtotal = 0
+		cart.orders.each do |order|
+			subtotal += order.package.price
+		end
+		return subtotal
+	end
+
 private
 	def order_params
 		params.require(:order).permit(:product_id, :package_id, :cart_id)

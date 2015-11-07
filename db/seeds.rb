@@ -38,7 +38,7 @@ Package.create!({
 
 Product.create!({
 	name: "Grey Goose Vodka",
-	description: "Canadian Whisky",
+	description: "Vodka",
 	long_description: "Bright water-white; subtle aromas of sweet citrus and white flower; the palate is soft with a gentle and subtle sweetness that envelops your mouth; warm and spicy on the finish.",
 	image_loc: "greygoose.jpg"
 	})

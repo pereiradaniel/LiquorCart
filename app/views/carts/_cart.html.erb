@@ -7,17 +7,23 @@
 		<% @orders.each do |order| %>
 			<div class="cart-item-listing">
 				<ul>
-					<li class="order-name"><%= order.product.name %></li>
-					<li><%= order.package.price %></li>
-					<li><%= order.package.volume_in_ml %></li>
+					<li class="order-name"><%= order.product.name %>, <%= order.package.volume_in_ml %></li>
 					<li><%= order.package.container_type %></li>
+					<li><%= order.package.price %></li>
 				</ul>
 					<div class="remove-link">
 					<%= link_to "Remove", order, { data: { confirm: "Are you sure you want to remove the item?"}, method: :delete, remote: true, class: "btn btn-danger"} %>
 					</div>
 			</div>
 		<% end %>
+				<div class="cart-item-listing">
+					<ul>
+						<li>Subtotal: $<%= @cart.subtotal %></li>
+					</ul>
+				</div>
 	<% end %>
+
+
 </nav>
 
 <div class="js-menu-screen sliding-menu-fade-screen"></div>
