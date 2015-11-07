@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   def current_cart
   	if !session[:cart_id].nil?
-      Cart.find(session[:cart_id])
+      Cart.exists?(:id => session[:cart_id]) ? Cart.find(session[:cart_id]) : Cart.new
     else
       Cart.new
   	end
