@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   	end
   end
 
+  def current_cart_price
+    current_cart.calculate_cart_price
+  end
+
 end
