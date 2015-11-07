@@ -1,6 +1,8 @@
 Just a simple, mobile ready, single page Rails app for a job interview test.  Ideally I would have created this using meteor, and it would have been more mobile ready.
 
-I noticed there are a few issues with the way it's displayed, due to mixin deprecations.  Bummer.
+DEPLOYMENT ISSUES:
+* Due to button being deprecated, the search function does not work YET on the Heroku app, although it does work when run locally.
+* I noticed there are a few issues with the way it's displayed, due to mixin deprecations, such as gray background on product card images, search button out of place.  Bummer.
 
 Try it on Heroku:
 https://stark-eyrie-4311.herokuapp.com
