@@ -7,6 +7,14 @@ Product.create!({
 
 Package.create!({
 	product_id: Product.last.id,
+	volume_in_ml: "710",
+	price: "25.35",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Package.create!({
+	product_id: Product.last.id,
 	volume_in_ml: "1140",
 	price: "38.15",
 	container_type: "Glass bottle",
@@ -24,6 +32,90 @@ Package.create!({
 	product_id: Product.last.id,
 	volume_in_ml: "750",
 	price: "59.45",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Product.create!({
+	name: "Grey Goose Vodka",
+	description: "Canadian Whisky",
+	long_description: "Bright water-white; subtle aromas of sweet citrus and white flower; the palate is soft with a gentle and subtle sweetness that envelops your mouth; warm and spicy on the finish.",
+	image: open("#{Rails.root}/app/assets/images/greygoose.jpg")
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "710",
+	price: "51.95",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "1140",
+	price: "75.95",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Product.create!({
+	name: "Johnnie Walker Black Label",
+	description: "Scotch Whisky Blends",
+	long_description: "Complex nose and flavour of smoky peat and sweet vanilla; smooth lingering finish",
+	image: open("#{Rails.root}/app/assets/images/johnnyblacklabel.jpg")
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "710",
+	price: "51.95",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "1140",
+	price: "76.95",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Product.create!({
+	name: "Lamb's Palm Breeze Rum",
+	description: "Amber Rum",
+	long_description: "Pale gold colour; burnt sugar aroma and vanilla flavour.",
+	image: open("#{Rails.root}/app/assets/images/lambs.jpg")
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "750",
+	price: "26.35",
+	container_type: "Glass bottle",
+	quantity: 1
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "1140",
+	price: "40.55",
+	container_type: "Plastic bottle",
+	quantity: 1
+	})
+
+Product.create!({
+	name: "Newfoundland Screech Rum",
+	description: "Amber Rum",
+	long_description: "Amber colour; dense nose of spice, brown sugar, vanilla, white chocolate and caramel; rich, toffee flavour with a hint of brine and a spicy finish.",
+	image: open("#{Rails.root}/app/assets/images/screech.jpg")
+	})
+
+Package.create!({
+	product_id: Product.last.id,
+	volume_in_ml: "750",
+	price: "27.05",
 	container_type: "Glass bottle",
 	quantity: 1
 	})

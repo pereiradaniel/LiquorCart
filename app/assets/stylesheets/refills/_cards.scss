@@ -13,6 +13,7 @@
 }
 
 .card {
+
   @include outer-container();
     @include media($small-screen-only) {
       @include span-columns(1);
@@ -78,14 +79,15 @@
 
   .card-image {
     overflow: hidden;
-    max-height: 150px;
-
+    // max-height: 180px;
+    text-align: center;
+    
     img {
       @include transition (all 0.2s ease-in-out);
       background: $card-image-background;
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
-      width: 100%;
+      // width: 100%;
     }
   }
 
