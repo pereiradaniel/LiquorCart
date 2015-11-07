@@ -2,7 +2,7 @@ Product.create!({
 	name: "Crown Royal",
 	description: "Canadian Whisky",
 	long_description: "Light amber colour; slightly floral aroma with corn, buttery/vanilla and peaches; slightly sweet peach flavour with wood tone finishes dry.",
-	image: open("#{Rails.root}/app/assets/images/crownroyal.jpg")
+	image_loc: "crownroyal.jpg"
 	})
 
 Package.create!({
@@ -25,7 +25,7 @@ Product.create!({
 	name: "Eldorado Reserve 15 Years Old Rum",
 	description: "Demerara Rum",
 	long_description: "Bright amber gold colour; caramel, butterscotch and toasty oak aromas; lucious rich flavours of toffee and caramel, smooth with a toasty, butterscotch finish",
-	image: open("#{Rails.root}/app/assets/images/eldorado.jpg")
+	image_loc: "eldorado.jpg"
 	})
 
 Package.create!({
@@ -40,7 +40,7 @@ Product.create!({
 	name: "Grey Goose Vodka",
 	description: "Canadian Whisky",
 	long_description: "Bright water-white; subtle aromas of sweet citrus and white flower; the palate is soft with a gentle and subtle sweetness that envelops your mouth; warm and spicy on the finish.",
-	image: open("#{Rails.root}/app/assets/images/greygoose.jpg")
+	image_loc: "greygoose.jpg"
 	})
 
 Package.create!({
@@ -63,7 +63,7 @@ Product.create!({
 	name: "Johnnie Walker Black Label",
 	description: "Scotch Whisky Blends",
 	long_description: "Complex nose and flavour of smoky peat and sweet vanilla; smooth lingering finish",
-	image: open("#{Rails.root}/app/assets/images/johnnyblacklabel.jpg")
+	image_loc: "johnnyblacklabel.jpg"
 	})
 
 Package.create!({
@@ -86,7 +86,7 @@ Product.create!({
 	name: "Lamb's Palm Breeze Rum",
 	description: "Amber Rum",
 	long_description: "Pale gold colour; burnt sugar aroma and vanilla flavour.",
-	image: open("#{Rails.root}/app/assets/images/lambs.jpg")
+	image_loc: "lambs.jpg"
 	})
 
 Package.create!({
@@ -109,7 +109,7 @@ Product.create!({
 	name: "Newfoundland Screech Rum",
 	description: "Amber Rum",
 	long_description: "Amber colour; dense nose of spice, brown sugar, vanilla, white chocolate and caramel; rich, toffee flavour with a hint of brine and a spicy finish.",
-	image: open("#{Rails.root}/app/assets/images/screech.jpg")
+	image_loc: "screech.jpg"
 	})
 
 Package.create!({
