@@ -6,7 +6,7 @@ $(document).ready(function() {
 		var request_object = {
 			search: $('#search').val(),
 		}
-		/*$('#search').val('')*/
+		$('#search').val('')
 
 		$.ajax({
 			url: '/products',
