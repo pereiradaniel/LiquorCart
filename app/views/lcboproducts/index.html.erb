@@ -1,0 +1,21 @@
+<form class="search-bar" role="search">
+  <input id="search" type="search" placeholder="Enter Search" />
+  <button id="search-btn" type="submit">
+    <i class="fa fa-search"></i>
+  </button>
+</form>
+
+<div class="cards">
+	<div class="products-list">
+		<%= render partial: 'lcboproducts/lcboproducts', collection: @lcboproducts %>
+	</div>
+</div>
+
+<div class="cart-info-bar">
+	<button type="button" class="js-menu-trigger sliding-menu-button">
+		<div class="icon">
+			<i class="fa fa-shopping-cart"></i>
+		</div>
+	</button>
+
+</div>

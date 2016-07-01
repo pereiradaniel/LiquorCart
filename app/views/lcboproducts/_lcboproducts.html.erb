@@ -1,0 +1,45 @@
+<div class="card">
+	<ul>
+    <div class="card-header">
+			<li><p><%= truncate(lcboproducts['name'], length: 30, separator: ' ') %></p></li>
+    </div>
+    
+<div class="hover-tile-outer">
+  <div class="hover-tile-container">
+    <div class="hover-tile hover-tile-visible">
+	    <div class="card-image">
+	      <%= image_tag lcboproducts['image_thumb_url'] %>
+	    </div>
+    </div>
+    <div class="hover-tile hover-tile-hidden">
+      <h4><%= lcboproducts['name'] %></h4>
+      <p><%= lcboproducts['tags'] %></p>
+    </div>
+  </div>
+</div>
+    
+    <div class="card-copy">
+				<li><%= truncate(lcboproducts['origin'], length: 20, separator: ' ') %></li>
+    </div>
+		
+		<div class="add-to-cart-btn">
+			<div class="modal">
+			  <label for="modal-<%= lcboproducts['id'] %>">
+			    <div class="modal-trigger">Add to cart</div>
+			  </label>
+			  <input class="modal-state" id="modal-<%= lcboproducts['id'] %>" type="checkbox" />
+			  <div class="modal-window">
+			    <div class="modal-inner">
+			      <label class="modal-close" for="modal-<%= lcboproducts['id'] %>"></label>
+			      <h1><%= lcboproducts['name'] %></h1>
+			      <p class="modal-intro">Please make a selection to add to your cart:</p>
+			      <p class="modal-content">
+			      </p>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</ul>
+</div>
+
+

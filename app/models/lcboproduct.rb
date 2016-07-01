@@ -9,5 +9,4 @@ class Lcboproduct
 	def self.find(product_id)
 		get('/products/#{product_id}')['result']
 	end
-
 end
