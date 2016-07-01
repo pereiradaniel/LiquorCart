@@ -5,6 +5,10 @@
   </button>
 </form>
 
+<div class="cart-list">
+	<%= render "carts/cart" %>
+</div>
+
 <div class="cards">
 	<div class="products-list">
 		<%= render partial: 'lcboproducts/lcboproducts', collection: @lcboproducts %>
@@ -17,5 +21,7 @@
 			<i class="fa fa-shopping-cart"></i>
 		</div>
 	</button>
-
+	<div class="cart-text">
+		<%= render "carts/cart_text" %>
+	</div>
 </div>

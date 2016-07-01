@@ -39,6 +39,11 @@
 											<li class="package-header"><%= lcboproducts['package_unit_volume_in_milliliters'] %> ml <%= lcboproducts['package_unit_type'] %></li>
 											<li>Quantity <%= lcboproducts['total_package_units'] %> / $<%= (lcboproducts['price_in_cents'] * 0.01).round(2) %></li>
 										</ul>
+										<%= form_for @order, remote: true do |f| %>
+											<%= f.hidden_field :lcboproduct_id, value: lcboproducts['id'] %>
+											<%= f.hidden_field :cart_id, value: current_cart.id %>
+											<%= f.submit "Add to cart", class: "btn btn-primary" %>
+					      		<% end %>
 									</div>
 				      </p>
 			    </div>
